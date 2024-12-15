@@ -183,19 +183,14 @@ class Main {
         library.addBook(book);
 
         /* Вторая книга с конструктором, принимающим все поля */
-        book = new Book();
-        book.setTitle("Сказка о Царе Салтане");
-        book.setAuthor("А.С. Пушкин");
-        book.setYear(1831);
-        book.setIsAvailable(false);
+        book = new Book("Сказка о Царе Салтане", "А.С. Пушкин", 1831,false);
         library.addBook(book);
 
         /* Третья книга с другим конструктором */
         book = new Book("Преступление и наказание", "Ф.М. Достоевский");
-        book.setYear(1866);
         library.addBook(book);
 
-        /* Четвёртая книга уже не влезет в библиотеку */
+        /* Четвёртая книга уже не влезет в библиотеку размером в 3 книги */
         book = new Book("Бесы", "Ф.М. Достоевский");
         book.setYear(1872);
         library.addBook(book);
